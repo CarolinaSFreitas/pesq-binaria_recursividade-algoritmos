@@ -24,15 +24,21 @@ def top20():
 def compara2():
     titulo("Compara 2 países - Gráfico de Barras")
 
-    pais1 = input("1º País: ")
-    pais2 = input("2º País: ")
+    pais1 = input("1º País: ").upper()
+    pais2 = input("2º País: ").upper()
 
     anos = ['2017', '2018', '2019', '2020', '2021', '2022', '2023']
     num1 = [   0,    0,    0,    0,    0,    0,    0]
     num2 = [   0,    0,    0,    0,    0,    0,    0]
 
-    
-
+    for linha in visitantes:
+        if linha["Country"].upper() == pais1:
+            indice = anos.index(linha["Year"])
+            num1[indice] += int(linha['Visitor'])
+        elif linha["Country"].upper() == pais2:
+            indice = anos.index(linha["Year"])
+            num2[indice] += int(linha['Visitor'])
+      
     # create data 
     x = np.arange(7) 
     width = 0.4
