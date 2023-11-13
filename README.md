@@ -5,3 +5,6 @@
 + https://panda.ime.usp.br/panda/static/pythonds_pt/05-OrdenacaoBusca/BuscaBinaria.html
 + https://algoritmosempython.com.br/cursos/algoritmos-python/pesquisa-ordenacao/pesquisa-binaria/
 
+# Manipulação do Dataset de visitantes do Japão
+
++ https://www.kaggle.com/code/nishimudliar/japan-visitors-eda
